@@ -1,0 +1,15 @@
+{
+    "name": "Go Dev Container",
+    "image": "mcr.microsoft.com/vscode/devcontainers/go:latest",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "golang.go",
+      "ms-vscode.go"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "go mod tidy",
+    "remoteUser": "vscode"
+  }
+  
